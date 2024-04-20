@@ -7,7 +7,7 @@ const user = mongoose.model("Userinfo");
 const detail = mongoose.model("Detailinfo")
 const cors = require("cors");
 const bcrypt = require("bcryptjs");
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors());
 const jwt = require("jsonwebtoken");
 
 
