@@ -6,21 +6,18 @@ const UserDetails = new mongoose.Schema(
     email:{type: String,unique:true},
     password:String,
 },{
-    collection:"Userinfo"
+    collection:"Userdata"
 }
 )
 const UserDetails1 = new mongoose.Schema(
     {
-        Author:String,
-        ISBNNumber:String,
-        Title:String,
-        PublishDate:String,
-        HadBuy:String,
-        email:String,
+        Task:String,
+        email:String
+       
 },{
-    collection:"Detailinfo"
+    collection:"Taskinfo"
 }
 )
-mongoose.model('Userinfo',UserDetails)
-mongoose.model('Detailinfo',UserDetails1)
+mongoose.model('Userdata',UserDetails)
+mongoose.model('Taskinfo',UserDetails1)
 
