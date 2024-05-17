@@ -187,7 +187,7 @@ const JWT_SECRET = process.env.JWT_SECRET;
 const userFilePath = "./userdata.json";
 const taskFilePath = "./taskinfo.json";
 
-// Utility function to read JSON data from a file
+
 const readJsonFile = (filePath) => {
   if (!fs.existsSync(filePath)) {
     fs.writeFileSync(filePath, JSON.stringify([]));
